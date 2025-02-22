@@ -1,0 +1,205 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    transition: 0.3s linear all;
+}
+form *{
+    color: white;
+}
+body{
+    background: linear-gradient(90deg,rgb(149, 91, 148),rgb(69, 69, 196));
+    max-height: 100vh;
+    max-width: 100vw;
+}
+.survey{
+    justify-items: center;
+}
+.link{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 130px;
+    display: flex;
+    height: 40px;
+    position: relative;
+}
+.link button{
+    width: 130px;
+    height: 40px;
+    background-color: rgb(140, 249, 249);
+    position: absolute;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(23, 19, 19);
+}
+.off{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 60px;
+    animation: anim 4s infinite linear;
+    z-index: 100;
+    transition: 0.5s all linear;
+}
+
+/* .on{
+    transform: scale(0.04);
+    padding-top: 60px;
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 0;
+    transition: 0.5s all linear;
+} */
+h2{
+    color: white;
+    position: relative;
+}
+form{
+    perspective: 10000px;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(152, 255, 224);
+    position: relative;
+    border-radius: 1%;
+}
+.main{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    position: relative;
+    top: 0;
+    /* border: 3px solid black; */
+    left: 0;
+    /* position: absolute; */
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+input{
+    color: rgb(255, 255, 255);
+    background-color: rgb(59, 46, 46);
+    border-radius: 8px;
+    width: 200px;
+    padding-left: 10px;
+    border: transparent;
+    height: 40px;
+}
+.skin{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: calc(calc(var(--k))*25%);
+    margin-left: -87.5px;
+    bottom: -54%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: 0.4s linear all;
+    /* animation: anim 4s infinite linear; */
+}
+.chosen{
+    margin: auto;
+    bottom: 25px;
+    left: 25px;
+    transform: scale(1) rotateY(0deg) !important;
+}
+span{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    padding: 10px 20px;
+    bottom: 10px;
+    right: 20px;
+    color: rgb(34, 25, 25);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 10px;
+    transition: 0.2s all linear;
+    border: 1px solid rgb(214, 165, 165);
+}
+span:hover{
+    letter-spacing: 1px;
+}
+.box{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    animation: anim 6s infinite linear;
+}
+h1{
+    font-size: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box .block{
+    z-index: 10;
+}
+.chosen .box .block{
+    z-index: 100;
+}
+.chosen .box .block{
+    opacity: 1;
+}
+.block{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background-color: rgb(114, 114, 114);
+    /* filter: hue-rotate(calc(var(--j)*90deg)); */
+    transform-style: preserve-3d;
+    top: 0;
+    left: 0;
+    /* padding-top: 10px;
+    padding-left: 10px; */
+    opacity: 1;
+    border: 5px solid rgb(0, 0, 0);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    border-radius: 6px;
+    transform: rotateY(calc(var(--i)*90deg)) translateZ(125px);
+}
+.third input::-webkit-inner-spin-button,
+.third input::-webkit-outer-spin-button
+{
+    -webkit-appearance: none;
+}
+.chosen .bos *{
+    opacity: 1;
+}
+.bos *{
+    opacity: 0;
+}
+.skin{
+    transform: scale(0.25)  rotateY(180deg);
+}
+.third .block .phone{
+    margin-top: 10px;
+}
+.third .block *{
+    margin-left: 15px;
+}
+/* .ff_block{
+    padding: 10px 15px;
+} */
+/* @keyframes anim{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}  */

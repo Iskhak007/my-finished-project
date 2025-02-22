@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey From</title>
+</head>
+<body>
+    <div class="survey off">
+        <h2 style="justify-content: center;display: flex;align-items: center;">Registration</h2>
+        <br>
+        <form action="">
+            <div class="main">
+                <div class="skin chosen" style="--k:0">
+                    <div class="box first">
+                        <div class="block ff_block bos" style="--i:0;--j:1">
+                            <label for="name" style="display: block;margin-top: 10px;margin-left: 15px;"><b title="Required">First Name:*</b></label>
+                            <input type="text" id="name" style="margin-left: 15px;margin-top: 5px;" placeholder="Enter your name">
+                            <label for="surname" style="display: block;margin-top: 20px;margin-left: 15px;"><b title="Required">Second Name:*</b></label>
+                            <input type="text" id="surname" placeholder="Enter your surname" style="display: block;margin-left: 15px;margin-top: 5px;">
+                            <span class="next">Next>></span>
+                        </div>
+                        <div class="block" style="--i:1;--j:1"></div>
+                        <div class="block" style="--i:2;--j:1"><h1>1</h1></div>
+                        <div class="block" style="--i:3;--j:1"></div>
+                    </div>
+                </div>
+                <div class="skin" style="--k:1">
+                    <div class="box second">
+                        <div class="block bos" style="--i:0;--j:2">
+                            <label for="email" style="display: block;margin-top: 10px;margin-left: 15px;">Email:*</label>
+                            <input type="email" id="email"  placeholder="Enter your email account" style="margin-left: 15px;">
+                            <label style="display: block;margin-top: 10px;margin-left: 15px;">Choose your gender:*</label>
+                            <input type="radio" name="gender" value="Male" checked style="width: 15px;height: 15px;margin-left: 25px;margin-top: 5px;background-color: green;">Male<br>
+                            <input type="radio" name="gender" value="Female" style="width: 15px;height: 15px;margin-left: 25px;background-color: green;">Female<br>
+                            <input type="radio" name="gender" value="Not human" style="width: 15px;height: 15px;margin-left: 25px;background-color: green;">I'm not a human<br>
+                            <span class="back" style="left: 10px;">Back</span>
+                            <span  class="next">Next>></span>
+                        </div>
+                        <div class="block" style="--i:1;--j:2"></div>
+                        <div class="block" style="--i:2;--j:2"><h1>2</h1></div>
+                        <div class="block" style="--i:3;--j:2"></div>
+                    </div>
+                </div>
+                <div class="skin" style="--k:2">
+                    <div class="box third">
+                        <div class="block bos" style="--i:0;--j:3">
+                            <label class="phone" for="Phone" style="display: block;">Phone number:*</label>
+                            <input placeholder="Enter your phone number" type="number" id="Phone">
+                            <label for="age" style="display: block;margin-top: 10px;">Your age:*</label>
+                            <input type="number" id="age" placeholder="Enter your age">
+                            <span class="back" style="left: -5px;">Back</span>
+                            <span class="next">Next>></span>
+                        </div>
+                        <div class="block" style="--i:1;--j:3"></div>
+                        <div class="block" style="--i:2;--j:3"><h1>3</h1></div>
+                        <div class="block" style="--i:3;--j:3"></div>
+                    </div>
+                </div>
+                <div class="skin" style="--k:3">
+                    <div class="box forth">
+                        <div class="block bos" style="--i:0;--j:4">
+                            <label for="password" style="display: block;margin-left: 15px;margin-top: 10px;">Enter your password:*</label>
+                            <input type="password" id="password" placeholder="Enter password" style="margin-left: 15px;margin-top: 10px;">
+                            <input type="radio" style="width: 15px;height: 15px;margin-left: 25px;background-color: green;margin-top: 10px;" required>I gree with...<br>
+                            <input type="radio" style="margin-left: 25px;margin-top: 15px;width: 15px;height: 15px;">I am NOT robot<br>
+                            <span class="back" style="left: 10px;">Back</span>
+                            <span>Finshed</span>
+                        </div>
+                        <div class="block" style="--i:1;--j:4"></div>
+                        <div class="block" style="--i:2;--j:4"><h1>4</h1></div>
+                        <div class="block" style="--i:3;--j:4"></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <a class="link" href="../Mainpage/face.html"><button>Sign in</button></a>
+    </div>
+    <script src="func.js"></script>
+</body>
+</html>

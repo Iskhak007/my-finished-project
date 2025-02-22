@@ -27,15 +27,15 @@ document.addEventListener('scroll', () => {
         opacity: ${op};
     `
     let eff = Math.round(x)
-    if(eff%5==0){
+    if(eff%2==0){
         let lft = Math.random()*10000;
         lft = Math.round(lft);
         lft = lft%1300;
         let d = document.createElement("span");
         let pl = document.createElement("span");
         pl.style = `
-            width: 200px;
-            height: 50px;
+            width: 150px;
+            height: 25px;
             left: ${lft}px;
             top: 0px;
             position: absolute;
@@ -48,8 +48,8 @@ document.addEventListener('scroll', () => {
         if(nch%2==0){
             d.style = `
                 position: absolute;
-                width: 50px;
-                height: 50px;
+                width: 25px;
+                height: 25px;
                 background-color: blue;
                 filter: hue-rotate(${(s)%360}deg) blur(5px);
                 left: 0px;
@@ -63,9 +63,9 @@ document.addEventListener('scroll', () => {
         else{
             d.style = `
                 position: absolute;
-                width: 50px;
-                height: 50px;
-                background-color: yellow;
+                width: 25px;
+                height: 25px;
+                background-color: pink;
                 filter: hue-rotate(${(eff*30)%360}deg) blur(5px);
                 right: 0px;
                 border-radius: 50%;
@@ -99,7 +99,7 @@ blck.addEventListener('scroll', (e) => {
         let shiftleft = itm.offsetLeft;
         let leftMeas = shiftleft;
         shiftleft = shiftleft - leftSide
-        if(shiftleft>=700 || shiftleft<=-240){
+        if(shiftleft>=700 || shiftleft<=-250){
             pict.item(id).style = `
                 transform: scale(0);
             `
@@ -118,6 +118,7 @@ goods.forEach((elem,ind) => {
             opacity: 1;
             border: 2px solid rgb(128, 52, 234); 
             cursor: pointer;
+            box-shadow: 0 0 40px rgb(80, 40, 168);
         `
     })
     pict.item(ind).addEventListener('mouseleave', () => {
@@ -128,6 +129,20 @@ goods.forEach((elem,ind) => {
             cursor: none;
         `
     })
+});
+/**<-----      cube unfinished */
+let pit = document.querySelector(".pictures");
+let an = document.querySelector(".an");
+pit.addEventListener("mousemove",(event) => {
+    let x = pit.getBoundingClientRect().left;
+    x = Math.round(x);
+    let mx = event.clientX;
+    mx = mx-x;
+    let len = pit.clientWidth;
+    let dg = (mx*360)/len;
+    an.style = `
+        transform: rotateY(${dg}deg);
+    `
 })
 // let buttonEffect = document.querySelector(".togoods");
 // buttonEffect.addEventListener("mouseenter", () => {
